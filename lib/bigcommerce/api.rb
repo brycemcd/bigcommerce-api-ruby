@@ -438,6 +438,10 @@ module Bigcommerce
       @connection.get("/products/#{product_id}/videos/#{video_id}", options)
     end
 
+    def blog_posts(options={})
+      @connection.get('/blog/posts', options)
+    end
+
     def count(result)
       result["count"]
     end
