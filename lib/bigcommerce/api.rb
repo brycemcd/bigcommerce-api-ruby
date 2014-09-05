@@ -422,7 +422,7 @@ module Bigcommerce
       @connection.get("/products/#{product_id}/skus/#{sku_id}", options)
     end
 
-    def update_products_sku(product_id, sku_id, options={})
+    def update_products_skus(product_id, sku_id, options={})
       @connection.put("/products/#{product_id}/skus/#{sku_id}", options)
     end
 
